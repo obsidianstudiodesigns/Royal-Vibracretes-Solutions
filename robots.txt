@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /logos.html
+
+Sitemap: https://obsidianstudiodesigns.github.io/Royal-Vibracretes-Solutions/sitemap.xml

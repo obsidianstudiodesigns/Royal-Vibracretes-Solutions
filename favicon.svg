@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Royal Vibracretes Solutions">
+  <defs>
+    <clipPath id="crown-clip"><path d="M5 19 19.5 31 32 11l12.5 20L59 19l-4.5 35h-45Z"/></clipPath>
+  </defs>
+  <path d="M5 19 19.5 31 32 11l12.5 20L59 19l-4.5 35h-45Z" fill="#1F4D38"/>
+  <g clip-path="url(#crown-clip)">
+    <g fill="#E7E5E0">
+      <rect x="0" y="22.5" width="64" height="6.5"/>
+      <rect x="0" y="31.5" width="64" height="6.5"/>
+      <rect x="0" y="40.5" width="64" height="6.5"/>
+      <rect x="0" y="49.5" width="64" height="6.5"/>
+    </g>
+    <g fill="#C9A24A">
+      <rect x="18" y="0" width="3.5" height="64"/>
+      <rect x="30.25" y="0" width="3.5" height="64"/>
+      <rect x="42.5" y="0" width="3.5" height="64"/>
+    </g>
+  </g>
+  <path d="M5 19 19.5 31 32 11l12.5 20L59 19l-4.5 35h-45Z" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linejoin="round"/>
+  <g fill="#C9A24A">
+    <circle cx="5" cy="17.5" r="3.2"/>
+    <circle cx="32" cy="8.5" r="3.2"/>
+    <circle cx="59" cy="17.5" r="3.2"/>
+    <rect x="8" y="57" width="48" height="4" rx="1"/>
+  </g>
+</svg>

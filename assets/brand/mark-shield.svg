@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Royal Vibracretes Solutions">
+  <defs>
+    <clipPath id="shield-clip"><path d="M32 4 58 11v19c0 15-11 25-26 31C17 55 6 45 6 30V11Z"/></clipPath>
+  </defs>
+  <path d="M32 4 58 11v19c0 15-11 25-26 31C17 55 6 45 6 30V11Z" fill="#1F4D38"/>
+  <g clip-path="url(#shield-clip)" fill="#E7E5E0">
+    <rect x="6" y="29" width="52" height="7"/>
+    <rect x="6" y="38.5" width="52" height="7"/>
+    <rect x="6" y="48" width="52" height="7"/>
+    <rect x="6" y="57.5" width="52" height="7"/>
+  </g>
+  <g clip-path="url(#shield-clip)" fill="#1F4D38">
+    <rect x="13" y="27" width="4" height="40"/>
+    <rect x="30" y="27" width="4" height="40"/>
+    <rect x="47" y="27" width="4" height="40"/>
+  </g>
+  <path d="M19 23 17.5 13l7.5 5.5L32 10l7 8.5 7.5-5.5L45 23Z" fill="#C9A24A"/>
+  <path d="M32 4 58 11v19c0 15-11 25-26 31C17 55 6 45 6 30V11Z" fill="none" stroke="#C9A24A" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
