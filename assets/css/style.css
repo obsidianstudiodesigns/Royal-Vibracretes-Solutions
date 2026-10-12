@@ -164,7 +164,7 @@ figure { margin: 0; }
 }
 
 .hero-media { position: absolute; inset: 0 0 0 38%; z-index: -1; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 60%; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 12% 60%; }
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
   background:
@@ -261,7 +261,7 @@ figure { margin: 0; }
   display: grid; grid-template-columns: 7fr 5fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center;
 }
 .feature-photo { position: relative; }
-.feature-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 72%; border-radius: 3px; }
+.feature-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; }
 .feature-photo::after {
   content: ""; position: absolute; left: -14px; bottom: -14px; width: 42%; height: 42%;
   border-left: 3px solid var(--brass); border-bottom: 3px solid var(--brass); z-index: -1;
@@ -281,7 +281,7 @@ figure { margin: 0; }
 }
 
 .service-list {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem 2.5rem;
   margin-top: clamp(4rem, 8vw, 6rem);
 }
 .service-list article { border-top: 2px solid var(--green-900); padding-top: 1.4rem; }
@@ -344,6 +344,7 @@ figure { margin: 0; }
 .g-tall { grid-row: span 2; }
 .g-tall img { object-position: 50% 30%; }
 .g-wide { aspect-ratio: 16 / 9; }
+.g-up img { object-position: 50% 42%; }
 .gallery figcaption {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: 2.5rem 1.25rem 1rem;
@@ -370,7 +371,7 @@ figure { margin: 0; }
 
 .why { padding: var(--section) 0; }
 .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
-.why-photo img { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; border-radius: 3px; }
+.why-photo img { width: 100%; aspect-ratio: 5 / 6; object-fit: cover; object-position: 35% 50%; border-radius: 3px; }
 .why-copy h2 { font-size: clamp(2.6rem, 5vw, 4.2rem); line-height: .92; color: var(--green-900); max-width: 12ch; }
 .why-list { margin-top: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
 .why-list dt { font-family: var(--display); font-weight: 800; font-size: 1.7rem; color: var(--green-700); }
@@ -397,7 +398,7 @@ figure { margin: 0; }
 .areas-inner > p { margin-top: 1.25rem; max-width: 34rem; color: rgba(231, 229, 224, .82); }
 .area-list {
   margin-top: 3rem;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 1.5rem;
   border-top: 1px solid rgba(231, 229, 224, .25);
 }
 .area-list li {
@@ -484,7 +485,7 @@ figure { margin: 0; }
   .service-list { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); row-gap: 3.5rem; }
   .steps::before { display: none; }
-  .area-list { grid-template-columns: repeat(2, 1fr); column-gap: 2rem; }
+  .area-list { grid-template-columns: repeat(3, 1fr); column-gap: 2rem; }
 }
 
 @media (max-width: 900px) {
@@ -509,9 +510,9 @@ figure { margin: 0; }
 
   .hero { align-items: flex-end; min-height: auto; padding-top: calc(var(--header-h) + 15rem); padding-bottom: 3.5rem; }
   .hero-media { inset: 0 0 38% 0; }
-  .hero-media img { object-position: 72% 50%; }
+  .hero-media img { object-position: 14% 50%; }
   .hero-media::after {
-    background: linear-gradient(180deg, rgba(15, 46, 34, .25) 0%, rgba(15, 46, 34, .3) 45%, var(--green-900) 100%);
+    background: linear-gradient(180deg, rgba(15, 46, 34, .2) 0%, rgba(15, 46, 34, .35) 30%, rgba(15, 46, 34, .78) 55%, var(--green-900) 85%);
   }
 
   .facts-grid { grid-template-columns: repeat(2, 1fr); column-gap: 1.5rem; }
@@ -519,6 +520,8 @@ figure { margin: 0; }
 
   .section-head { grid-template-columns: 1fr; }
   .service-feature, .why-grid, .quote-grid { grid-template-columns: 1fr; }
+  .why-photo img { aspect-ratio: 4 / 3; }
+  .service-list { grid-template-columns: repeat(2, 1fr); }
   .feature-photo::after { left: -8px; bottom: -8px; }
   .structures { grid-template-columns: 1fr; }
 
@@ -527,7 +530,6 @@ figure { margin: 0; }
   .g-tall img { object-position: 50% 45%; }
   .g-wide { aspect-ratio: 1 / 1; }
 
-  .why-photo img { aspect-ratio: 4 / 3; }
 
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: span 2; }
